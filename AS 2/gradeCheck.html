@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var mathematics = Number(prompt("Enter mathematics marks"));
+        var science = Number(prompt("Enter science marks"));
+        var english = Number(prompt("Enter english marks"));
+        var geography = Number(prompt("Enter geography marks"));
+        var urdu = Number(prompt("Enter urdu marks"));
+
+        var obtainedMarks = mathematics + science + english + geography + urdu
+        alert("Good! Here is your Obtained Marks " + obtainedMarks);
+        var totalMark = Number(prompt("Now enter you Total Marks"));
+
+        var result = (obtainedMarks * 100)/totalMark
+
+
+        alert("Your percentage is " + result + "%");
+
+        var grade = result;
+
+        if(result<=60){
+            alert("your grade is F")
+
+        } else if (result<=70){
+            alert("Your grade is D")
+        } else if (result<=80){
+            alert("Your grade is C")
+
+        } else if(result<=90){
+            alert("Your grade  is B")
+        } else if(result<=100){
+            alert("Your result is A")
+        }
+    </script>
+</body>
+
+</html>
